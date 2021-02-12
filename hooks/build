@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $DOCKER_REPO == "atcommons/cvat" ]
+then
+  docker-compose build cvat
+elif [ $DOCKER_REPO == "atcommons/cvat_ui" ]
+then
+  docker-compose build cvat_ui
+else
+exit 1
+fi
