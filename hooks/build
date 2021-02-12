@@ -1,11 +1,14 @@
 #!/bin/bash
+set -uex
+docker-compose --version
 docker-compose -f cvat/docker-compose.yml build cvat
 if [ $DOCKER_REPO == "atcommons/cvat" ]
 then
-  exit 0
+  docker-compose -f cvat/docker-compose.yml build cvat
 elif [ $DOCKER_REPO == "atcommons/cvat_ui" ]
 then
   docker-compose -f cvat/docker-compose.yml build cvat_ui
 else
-  exit 0
+  echo "no matching repo name"
+  exit 1
 fi
