@@ -2,9 +2,9 @@ name: latest version
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
   schedule:
     - cron: '20 1 * * *'
 
@@ -18,10 +18,9 @@ jobs:
       - name: get available tags
         run: |
           set -uex
-          git status
-          git ls-remote --tags https://github.com/openvinotoolkit/cvat.git
           git ls-remote --tags https://github.com/openvinotoolkit/cvat.git | sed -n -e 's/^.*tags\///p' | sed -ne '/v[0-9].[0-9].[0-9]$/p' | tail -1 > latest_tag.txt
 
       - name: Check remote version with local
         run: |
+          echo "local version is `cat VERSION`, latest version is `cat latest_tag.txt`"
           grep -q $(cat VERSION) latest_tag.txt
