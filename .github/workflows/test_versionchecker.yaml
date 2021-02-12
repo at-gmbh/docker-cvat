@@ -22,7 +22,5 @@ jobs:
 
       - name: Check remote version with local
         run: |
-          cat latest_tag.txt
-          cat VERSION
-          echo "v1.1.0" > latest_tag.txt
+          echo "local version `cat VERSION`\nlatest version: `cat latest_tag.txt`"
           grep -q $(cat VERSION) latest_tag.txt
