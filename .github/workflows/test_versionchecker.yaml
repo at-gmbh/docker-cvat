@@ -1,6 +1,10 @@
 name: latest version
 
 on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
   schedule:
     - cron: '20 1 * * *'
 
