@@ -1,11 +1,11 @@
 #!/bin/bash
-
+docker-compose -f cvat/docker-compose.yml build cvat
 if [ $DOCKER_REPO == "atcommons/cvat" ]
 then
-  docker-compose -f cvat/docker-compose.yml build cvat
+  exit 0
 elif [ $DOCKER_REPO == "atcommons/cvat_ui" ]
 then
-  docker-compose build cvat_ui
+  docker-compose -f cvat/docker-compose.yml build cvat_ui
 else
-  exit 1
+  exit 0
 fi
