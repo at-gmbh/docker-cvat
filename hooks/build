@@ -3,4 +3,4 @@ set -uex
 docker-compose --version
 echo 'starting the build'
 docker-compose -f cvat/docker-compose.yml build cvat
-echo ${IMAGE_NAME}
+docker image tag cvat/server:latest ${IMAGE_NAME}
