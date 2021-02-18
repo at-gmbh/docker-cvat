@@ -1,15 +1,6 @@
 #!/bin/bash
 set -uex
 docker-compose --version
+echo 'starting the build'
 docker-compose -f cvat/docker-compose.yml build cvat
-if [ $DOCKER_REPO == "atcommons/cvat" ]
-then
-  docker-compose -f cvat/docker-compose.yml build cvat
-  docker image tag cvat/server:latest ${IMAGE_NAME}
-elif [ $DOCKER_REPO == "atcommons/cvat_ui" ]
-then
-  docker-compose -f cvat/docker-compose.yml build cvat_ui
-else
-  echo "no matching repo name"
-  exit 1
-fi
+echo ${IMAGE_NAME}
