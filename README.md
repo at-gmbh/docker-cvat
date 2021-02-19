@@ -1,13 +1,12 @@
 # docker-CVAT images
+A docker image of [CVAT](https://github.com/openvinotoolkit/cvat) for [server](https://hub.docker.com/r/atcommons/cvat) and [UI](https://hub.docker.com/r/atcommons/cvat-ui)
+
 #### cvat server
 [![CVAT Automated build](https://img.shields.io/docker/cloud/automated/atcommons/cvat)](https://hub.docker.com/r/atcommons/cvat)
 [![CVAT Build Status](https://img.shields.io/docker/cloud/build/atcommons/cvat)](https://hub.docker.com/r/atcommons/cvat)
 #### cvat ui
 [![CVAT UI Automated build](https://img.shields.io/docker/cloud/automated/atcommons/cvat-ui)](https://hub.docker.com/r/atcommons/cvat-ui)
 [![CVAT UI Build Status](https://img.shields.io/docker/cloud/build/atcommons/cvat-ui)](https://hub.docker.com/r/atcommons/cvat-ui)
-
-
-A docker image of [CVAT](https://github.com/openvinotoolkit/cvat) for [server](https://hub.docker.com/r/atcommons/cvat) and [UI](https://hub.docker.com/r/atcommons/cvat-ui)
 
 
 ## Supported Tags
