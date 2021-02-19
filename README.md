@@ -42,11 +42,13 @@ When a new version is released, please make a git commit with the modified versi
 
 ## Contact
 
-Louis de Gaste  (louis.degaste [at] alexanderthamm.com)
-Sebastian Straub (sebastian.straub [at] alexanderthamm.com)
+* Louis de Gaste  (louis.degaste [at] alexanderthamm.com)
+* Sebastian Straub (sebastian.straub [at] alexanderthamm.com)
 
 Developed with ❤ at [Alexander Thamm GmbH](https://www.alexanderthamm.com/)
 
 ## License
 
-Code released under the [MIT License](./LICENSE). We are not affiliated with CVAT. The source code of CVAT is also released under the [MIT License](https://github.com/openvinotoolkit/cvat/blob/develop/LICENSE); however, additional restrictions may apply.
+Code released under the [MIT License](./LICENSE). 
+
+We are not affiliated with CVAT. The source code of CVAT is also released under the [MIT License](https://github.com/openvinotoolkit/cvat/blob/develop/LICENSE); however, additional restrictions may apply.
