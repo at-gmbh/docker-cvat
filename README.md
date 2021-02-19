@@ -31,14 +31,13 @@ When a new version is released, please make a git commit with the modified versi
 - retag the image (in the bash script) to ${IMAGE_NAME} for docker hub to find the built image afterward
 - in automated build configuration, specify a dummy file as dockerfile. It wont be used but must exist.
 
-
 ## Contact
 
-Sebastian Straub (sebastian.straub [at] alexanderthamm.com)
 Louis de Gaste  (louis.degaste [at] alexanderthamm.com)
+Sebastian Straub (sebastian.straub [at] alexanderthamm.com)
 
 Developed with ❤ at [Alexander Thamm GmbH](https://www.alexanderthamm.com/)
 
 ## License
 
-
+Code released under the [MIT License](./LICENSE). We are not affiliated with CVAT. The source code of CVAT is also released under the [MIT License](https://github.com/openvinotoolkit/cvat/blob/develop/LICENSE); however, additional restrictions may apply.
