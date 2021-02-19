@@ -1,4 +1,4 @@
-# docker-CVAT images
+# CVAT DOCKER images
 A docker image of [CVAT](https://github.com/openvinotoolkit/cvat) for [server](https://hub.docker.com/r/atcommons/cvat) and [UI](https://hub.docker.com/r/atcommons/cvat-ui)
 
 #### cvat server
