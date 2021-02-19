@@ -1,3 +1,6 @@
+# CVAT DOCKER images
+A docker image of [CVAT](https://github.com/openvinotoolkit/cvat) for [server](https://hub.docker.com/r/atcommons/cvat) and [UI](https://hub.docker.com/r/atcommons/cvat-ui)
+
 # Docker Images for CVAT
 
 <table border="0">
@@ -36,9 +39,11 @@ When a new version is released, please make a git commit with the modified versi
 
 ## Configuration of automated build with docker hub
 
-- add a hooks/build file containing the bash script with docker-compose build
-- retag the image (in the bash script) to ${IMAGE_NAME} for docker hub to find the built image afterward
-- in automated build configuration, specify a dummy file as dockerfile. It wont be used but must exist.
+The usage of docker-compose for automated build by Docker hub involved the following adaptations:
+
+- add a hooks/build file in the repo containing a script with the docker-compose build command, which will replace the docker-hub build phase
+- retag the image (in the build script) to ${IMAGE_NAME} (env. variable provided by docker hub) so that docker hub can find the built image afterward.
+- in automated build configuration, specify a dummy file as dockerfile. It wont be used for the build but if docker hub requires an existing Dockerfile nevertheless.
 
 ## Contact
 
