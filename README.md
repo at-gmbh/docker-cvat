@@ -1,14 +1,36 @@
 # docker-CVAT images
 
-[![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/atcommons/docker-cvat)](https://hub.docker.com/r/atcommons/docker-cvat)
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/atcommons/docker-cvat)](https://hub.docker.com/r/atcommons/docker-cvat)
-[![PyPI - License](https://img.shields.io/pypi/l/personio-py)](https://github.com/at-gmbh/personio-py/blob/master/LICENSE)
+[![CVAT Automated build](https://img.shields.io/docker/cloud/automated/atcommons/cvat)](https://hub.docker.com/r/atcommons/cvat)
+[![CVAT Build Status](https://img.shields.io/docker/cloud/build/atcommons/cvat)](https://hub.docker.com/r/atcommons/cvat)
+[![CVAT UI Automated build](https://img.shields.io/docker/cloud/automated/atcommons/cvat-ui)](https://hub.docker.com/r/atcommons/cvat-ui)
+[![CVAT UI Build Status](https://img.shields.io/docker/cloud/build/atcommons/cvat-ui)](https://hub.docker.com/r/atcommons/cvat-ui)
+[![CVAT - License](https://img.shields.io/pypi/l/personio-py)](https://github.com/at-gmbh/personio-py/blob/master/LICENSE)
 
-A docker image of [CVAT](https://github.com/openvinotoolkit/cvat), standard and UI 
+A docker image of [CVAT](https://github.com/openvinotoolkit/cvat) for server (https://hub.docker.com/r/atcommons/cvat) and UI (https://hub.docker.com/r/atcommons/cvat-ui)
 
-## Update
+
+## Supported Tags
+
+* [latest](https://github.com/openvinotoolkit/cvat/blob/master/Dockerfile)
+* [1.2.0](https://github.com/openvinotoolkit/cvat/blob/v1.2.0/Dockerfile)
+
+
+These tags denote version numbers that correspond to the published versions of the CVAT module.
+
+## How to use this image
+
+
+## Maintaining this Build
 
 When a new version is released, please make a git commit with the modified version in the VERSION file and the corresponding tag with format "vx.x.x".
+
+
+## Configuration of automated build with docker hub
+
+- add a hooks/build file containing the bash script with docker-compose build
+- retag the image (in the bash script) to ${IMAGE_NAME} for docker hub to find the built image afterward
+- in automated build configuration, specify a dummy file as dockerfile. It wont be used but must exist.
+
 
 ## Contact
 

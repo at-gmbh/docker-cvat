@@ -10,6 +10,6 @@ then
   docker-compose -f cvat/docker-compose.yml build cvat_ui
   docker image tag cvat_ui/server:latest ${IMAGE_NAME}
 else
-  echo "no matching repo name"
+  echo "no matching repo name in build hooks"
   exit 1
 fi
