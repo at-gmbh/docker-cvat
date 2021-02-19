@@ -1,9 +1,12 @@
 #!/bin/bash
 set -uex
 
+# checking which repo is calling the build
 if [ $DOCKER_REPO == "index.docker.io/atcommons/cvat" ]
 then
+  # calling the corresponding build
   docker-compose -f cvat/docker-compose.yml build cvat
+  # renaming the images for docker hub to find it
   docker image tag cvat/server:latest ${IMAGE_NAME}
 elif [ $DOCKER_REPO == "index.docker.io/atcommons/cvat_ui" ]
 then

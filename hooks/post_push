@@ -1,2 +1,2 @@
 #!/bin/bash
-git fetch --depth=1000
+git fetch --depth=100
