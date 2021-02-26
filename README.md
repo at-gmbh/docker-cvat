@@ -31,7 +31,12 @@ These tags denote version numbers that correspond to the published versions of t
 
 ## How to use this image
 
-...
+To run the CVAT UI image, use:
+```
+docker run -p 80:80 --name <cvat_ui name> -d atcommon/cvat_ui
+```
+
+For an extended description of how to use a CVAT docker image, please go to the official [CVAT installation documentation](https://github.com/openvinotoolkit/cvat/blob/master/cvat/apps/documentation/installation.md).
 
 ## Maintaining this Build
 
