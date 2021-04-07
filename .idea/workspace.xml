@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3b5fcacd-ce5f-458a-b201-f4f76d6c831f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/cvat" beforeDir="false" afterPath="$PROJECT_DIR$/cvat" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="e52b8250-619d-4a35-8fe6-8d6c73d3f565" />
+  <component name="ProjectId" id="1qRBA4KYExF21nkoaGXApirxEka" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b5fcacd-ce5f-458a-b201-f4f76d6c831f" name="Default Changelist" comment="" />
+      <created>1617032376383</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617032376383</updated>
+      <workItem from="1617032377909" duration="7000" />
+    </task>
+    <servers />
+  </component>
+</project>
